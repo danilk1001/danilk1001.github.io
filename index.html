@@ -1,84 +1,111 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой сайт с вкладками</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
 </head>
 <body>
     <header>
-        <h1><i class="fas fa-star"></i> Мой сайт</h1>
-        <nav>
-            <div class="tabs">
-                <button class="tab-btn active" data-tab="home">
-                    <i class="fas fa-home"></i> Главная
-                </button>
-                <button class="tab-btn" data-tab="about">
-                    <i class="fas fa-user"></i> Обо мне
-                </button>
-                <button class="tab-btn" data-tab="contact">
-                    <i class="fas fa-envelope"></i> Контакты
-                    </button>
-                    <button class="tab-btn" data-tab="updates">
-                    <i class="fas fa-envelope"></i> Обновления
-                </button>
-            </div>
-        </nav>
+    <h1><i class="fas fa-star"></i> Мой сайт</h1>
+    <nav>
+    <div class="tabs">
+    <button class="tab-btn active" data-tab="home">
+        <i class="fas fa-home"></i> Главная
+    </button>
+    <button class="tab-btn" data-tab="about">
+        <i class="fas fa-user"></i> Обо мне
+    </button>
+    <button class="tab-btn" data-tab="contact">
+        <i class="fas fa-envelope"></i> Контакты
+    </button>
+    <button class="tab-btn" data-tab="updates">
+        <i class="fas fa-sync-alt"></i> Обновления
+    </button>
+    </div>
+    </nav>
     </header>
-
     <main>
-        <div class="tab-content active" id="home">
-            <h2><i class="fas fa-home"></i> Добро пожаловать!</h2>
-            <p>Это главная страница моего сайта. Здесь будет основная информация.</p>
-            <div class="card">
-                <h3>Мои проекты:</h3>
-                <ul>
-                    <li>Веб-сайт с вкладками</li>
-                    <li>GitHub репозиторий</li>
-                    <li>Персональная страница</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="tab-content" id="about">
-            <h2><i class="fas fa-user"></i> Обо мне</h2>
-            <div class="about-container">
-                <div class="avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <div class="about-text">
-                    <p>Привет! Я создаю свой первый сайт на GitHub.</p>
-                    <p>Этот сайт создан с нуля.</p>
-                    <p>Я учусь на фэшн-дизайнера в ТГПУ.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="tab-content" id="contact">
-            <h2><i class="fas fa-envelope"></i> Контакты</h2>
-            <div class="contact-list">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span> danil.kirikovich@mail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/danilk1001" target="_blank">Мой GitHub</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Москва, Россия</span>
-                </div>
-            </div>
-        </div>
+    <div class="tab-content active" id="home">
+    <h2><i class="fas fa-home"></i> Добро пожаловать!</h2>
+    <p>Это главная страница моего сайта. Здесь будет основная информация.</p>
+    </div>
+    
+    <div class="tab-content" id="about">
+        <h2><i class="fas fa-user"></i> Обо мне</h2>
+        <p>Информация обо мне...</p>
+    </div>
+    
+    <div class="tab-content" id="contact">
+        <h2><i class="fas fa-envelope"></i> Контакты</h2>
+        <p>Мои контактные данные...</p>
+    </div>
+    
+    <div class="tab-content" id="updates">
+        <!-- ПУСТАЯ ВКЛАДКА - только заголовок -->
+        <h2><i class="fas fa-sync-alt"></i> Обновления</h2>
+        <!-- Здесь пока ничего нет -->
+    </div>
     </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
 
-    <footer>
-        <p>© 2025 Мой сайт.</p>
-    </footer>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт с вкладками</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
+</head>
+<body>
+    <header>
+    <h1><i class="fas fa-star"></i> Мой сайт</h1>
+    <nav>
+    <div class="tabs">
+    <button class="tab-btn active" data-tab="home">
+        <i class="fas fa-home"></i> Главная
+    </button>
+    <button class="tab-btn" data-tab="about">
+        <i class="fas fa-user"></i> Обо мне
+    </button>
+    <button class="tab-btn" data-tab="contact">
+        <i class="fas fa-envelope"></i> Контакты
+    </button>
+    <button class="tab-btn" data-tab="updates">
+        <i class="fas fa-sync-alt"></i> Обновления
+    </button>
+    </div>
+    </nav>
+    </header>
+    <main>
+    <div class="tab-content active" id="home">
+    <h2><i class="fas fa-home"></i> Добро пожаловать!</h2>
+    <p>Это главная страница моего сайта. Здесь будет основная информация.</p>
+    </div>
+    
+    <div class="tab-content" id="about">
+        <h2><i class="fas fa-user"></i> Обо мне</h2>
+        <p>Информация обо мне...</p>
+    </div>
+    
+    <div class="tab-content" id="contact">
+        <h2><i class="fas fa-envelope"></i> Контакты</h2>
+        <p>Мои контактные данные...</p>
+    </div>
+    
+    <div class="tab-content" id="updates">
+        <!-- ПУСТАЯ ВКЛАДКА - только заголовок -->
+        <h2><i class="fas fa-sync-alt"></i> Обновления</h2>
+        <!-- Здесь пока ничего нет -->
+    </div>
+    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
